@@ -1,0 +1,60 @@
+Hello Dear examiner,
+--------------------
+
+Project structure
+==================
+├── algorithm.py
+├── api_lib
+│   ├── config.yml
+│   └── intra.py
+├── chosen_labs
+│   ├── exam_choices.py
+│   └── seats_comps.py
+├── main.py
+├── READ_***_FIRST.txt
+├── README.md
+├── request_data.py
+├── requirements.txt
+├── res
+│   ├── colors.py
+│   └── Intra-Meta-Clusters.png
+├── send_emails.py
+└── users_data.csv
+
+3 directories, 14 files
+
+
+
+Theses are some notes to consider while testing the script:
+➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤
+
+In order to request info from 42 intra api with the correct permissions, you will need to 
+	configure your `config.yml` file inside api_lib folder
+	[its already contain my API keys for testing]
+	-->	client: "example_726432892489323472345" #UID
+	-->	secret: "example_238749273073423748329" #SECRET
+➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤
+
+
+1 }➤ At the beginning of the execution you need to choose the exam labs
+
+2 }➤ the part that get the users data is not accurate enough,
+		cause it get random event data {Dummy Data}, so make sure you enter
+		your specific exam event id at the top of the (main.py) after imports part
+
+3 }➤ Requesting data about the last seats for the users take decent amount of time 
+		even after using threads to make it faster, so be patient,
+		i know it is better to use (async and await) to make that faster,
+		so you can try to edit the code if you want.
+
+4 }➤ Also sending emails to a lot of recipients is going to be good but not fast enough,
+		i tried to apply threads on (server.sendmail) but i faced an error called:
+		<<<< smtplib.SMTPServerDisconnected: Connection unexpectedly closed: [Errno 104] >>>>
+		so i removed that and kept the old way, so you can try to improve it if you want.
+
+5 }➤ The algorithm is really precise and accurate, so please
+		take your time to read all the comment in (algorithm.py) and understand it well.
+
+
+Thanks...
+➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤
