@@ -56,4 +56,4 @@ run the script with command `python3 main.py` then follow the instructions
 
 ---
 
-![alt text](https://github.com/Gab-182/Exam_seats_generator/blob/master/res/Intra-Meta-Clusters.png)
+![alt text](https://github.com/Gab-182/E_script/blob/master/res/Intra-Meta-Clusters.png)
